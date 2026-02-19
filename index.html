@@ -1,3 +1,35 @@
-<iframe src="https://dlhd.link/stream/stream-53.php" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Full Screen Dark iFrame</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;      /* Prevent scrollbars */
+    background-color: #121212; /* Dark background behind iframe */
+    color: #ffffff;        /* Optional: text color if visible */
+  }
+
+  iframe {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;    /* Full viewport width */
+    height: 100vh;   /* Full viewport height */
+    border: none;
+    display: block;
+    background-color: #121212; /* Dark background if iframe doesn't cover fully */
+    z-index: 999999;
+  }
+</style>
+</head>
+<body>
+  <iframe src="https://dlhd.link/stream/stream-53.php">
     Your browser doesn't support iframes
-</iframe>
+  </iframe>
+</body>
+</html>
